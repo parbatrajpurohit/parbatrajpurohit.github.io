@@ -102,6 +102,38 @@ nav ul li a:hover {
   background: #7c3aed;
 }
 
+.photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.photo img {
+  width: 600px; /* or whatever size you prefer */
+  height: auto;
+  border-radius: 0;         /* remove curved corners */
+  box-shadow: none;         /* remove shadow causing the halo */
+  background: transparent;  /* in case it was defaulting to a background */
+}
+
+.image-mask {
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: auto;
+}
+
+.image-mask img {
+  width: 100%;
+  height: auto;
+  display: block;
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+
 .socials a {
   font-size: 24px;
   margin-right: 20px;
