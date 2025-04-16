@@ -23,6 +23,18 @@
         .centered-about .btn {
           margin-top: 20px;
         }
+
+        /* Background image for all sections */
+        .section-bg {
+          background:
+            linear-gradient(to bottom,
+              rgba(10, 15, 36, 0.8),
+              rgba(10, 15, 36, 0.95)
+            ),
+            url("Images/3d-motion-flow-background-with-digital-particles.jpg") no-repeat center center;
+          background-size: cover;
+          background-attachment: fixed;
+        }
     </style>
 </head>
 <body>
@@ -77,7 +89,8 @@
 </div>
 
 <!-- Certifications Section -->
-<section id="certifications" class="cert-section">
+<!-- Certifications Section -->
+<section id="certifications" class="cert-section section-bg">
     <h2>Certifications</h2>
     <div class="cert-grid">
 
@@ -132,8 +145,7 @@
             </div>
             <div class="cert-info">
                 <h3>Python Basics</h3>
-                <p>Completed foundational Python programming course offered by the University of Michigan on
-                    Coursera.</p>
+                <p>Completed foundational Python programming course offered by the University of Michigan on Coursera.</p>
                 <div class="tags">
                     <span>#Python</span>
                     <span>#UniversityOfMichigan</span>
@@ -163,11 +175,11 @@
             </div>
         </div>
 
+        <!-- Deloitte Certificate -->
         <div class="cert-card compact">
             <div class="cert-thumb">
                 <img src="Images/deloitte-cert.jpg" alt="Deloitte Certificate">
-                <a href="Images/deloitte-cert.jpg" class="download-btn" download
-                   title="Download Certificate">
+                <a href="Images/deloitte-cert.jpg" class="download-btn" download title="Download Certificate">
                     <i class="fas fa-download"></i>
                 </a>
             </div>
@@ -183,11 +195,11 @@
             </div>
         </div>
 
+        <!-- PwC Certificate -->
         <div class="cert-card compact">
             <div class="cert-thumb">
                 <img src="Images/pwc-cert.jpg" alt="PwC Certificate">
-                <a href="Images/pwc-cert.jpg" class="download-btn" download
-                   title="Download Certificate">
+                <a href="Images/pwc-cert.jpg" class="download-btn" download title="Download Certificate">
                     <i class="fas fa-download"></i>
                 </a>
             </div>
@@ -206,26 +218,37 @@
 </section>
 
 <!-- Projects Section -->
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Project One</h3>
-        <p>A simple description of what this project is about.</p>
-        <a href="#">View Project</a>
+<section id="projects" class="section-bg">
+    <div class="project-card">
+        <img src="Images/Diagram.jpg" alt="Apache Spark and Delta Lake Project "
+             class="project-image">
+        <div class="project-content">
+            <h3>Delta Lakehouse for Dynamic Analytics</h3>
+            <p>Built a scalable, containerized platform for time-series data—supporting efficient storage, real-time
+                processing, and dynamic querying for faster, insight-driven testing workflows.</p>
+
+            <div class="tags">
+                <span>#ApacheSpark</span>
+                <span>#DeltaLake</span>
+                <span>#BigData</span>
+                <span>#Docker</span>
+            </div>
+            <a href="https://github.com/parbatrajpurohit/spark-delta-architecture" class="project-link" target="_blank">View
+                Project</a>
+        </div>
     </div>
-    <div class="project">
-        <h3>Project Two</h3>
-        <p>Another project description, maybe with a link to GitHub.</p>
-        <a href="#">View Project</a>
-    </div>
+<!--    <div class="project">-->
+<!--        <h3>Project Two</h3>-->
+<!--        <p>Another project description, maybe with a link to GitHub.</p>-->
+<!--        <a href="#">View Project</a>-->
+<!--    </div>-->
 </section>
 
 <!-- Contact Section -->
-<section id="contact">
+<section id="contact" class="section-bg">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:rparbat97@gmail.com">rparbat97@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/parbat-10171418a/" target="_blank">linkedin.com/in/parbat-10171418a</a>
-    </p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/parbat-10171418a/" target="_blank">linkedin.com/in/parbat-10171418a</a></p>
     <p>GitHub: <a href="https://github.com/parbatrajpurohit" target="_blank">github.com/parbatrajpurohit</a></p>
 </section>
 

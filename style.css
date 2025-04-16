@@ -16,10 +16,9 @@ body, html {
   padding: 20px;
   background:
     linear-gradient(to bottom,
-      rgba(10, 15, 36, 0.1) 0%,
-      rgba(10, 15, 36, 0.4) 40%,
-      rgba(10, 15, 36, 0.7) 70%,
-      #0a0f24 100%
+      rgba(10, 15, 36, 0.7) 20%,
+      rgba(10, 15, 36, 0.85) 100%,
+      rgba(10, 15, 36, 0.95) 100%
     ),
     url("Images/3d-motion-flow-background-with-digital-particles.jpg") no-repeat center center;
   background-size: cover;
@@ -110,14 +109,6 @@ nav ul li a:hover {
   padding: 20px;
 }
 
-.photo img {
-  width: 600px; /* or whatever size you prefer */
-  height: auto;
-  border-radius: 0;         /* remove curved corners */
-  box-shadow: none;         /* remove shadow causing the halo */
-  background: transparent;  /* in case it was defaulting to a background */
-}
-
 .image-mask {
   position: relative;
   overflow: hidden;
@@ -131,9 +122,12 @@ nav ul li a:hover {
   display: block;
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
 }
 
-
+/* Social Links */
 .socials a {
   font-size: 24px;
   margin-right: 20px;
@@ -145,7 +139,7 @@ nav ul li a:hover {
   color: #a78bfa;
 }
 
-/* Embedded About Me */
+/* About */
 .about-inside-hero {
   margin-top: 40px;
 }
@@ -162,9 +156,20 @@ nav ul li a:hover {
   line-height: 1.6;
 }
 
-/* Sections */
+/* Reusable Section Background */
+.section-bg {
+  background:
+    linear-gradient(to bottom,
+      rgba(10, 15, 36, 0.8),
+      rgba(10, 15, 36, 0.95)
+    ),
+    url("Images/3d-motion-flow-background-with-digital-particles.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Section Base */
 section {
-  background-color: #0a0f24;
   padding: 60px 20px;
   max-width: 1000px;
   margin: auto;
@@ -283,4 +288,65 @@ footer {
   .photo {
     margin-top: 30px;
   }
+
+  .image-mask {
+    width: 90%;
+  }
+}
+
+.project-card {
+    background-color: #0f0f2f;
+    border-radius: 16px;
+    padding: 16px;
+    max-width: 350px;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #444;
+}
+
+.project-content h3 {
+    margin: 0 0 8px;
+    font-size: 1.25rem;
+}
+
+.project-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.tags {
+    margin: 10px 0;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: #381e8f;
+    padding: 5px 10px;
+    margin: 4px 4px 0 0;
+    border-radius: 8px;
+    font-size: 0.75rem;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #6346d1;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.project-link:hover {
+    background-color: #7a5ddf;
 }
