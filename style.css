@@ -446,3 +446,21 @@ footer {
   color: #d1d5db;
   margin: 10px 0 0;
 }
+
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #1e1e2f;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-image {
+  height: 220px;  /* adjust as needed */
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
